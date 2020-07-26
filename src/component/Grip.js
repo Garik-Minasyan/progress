@@ -1,5 +1,5 @@
 import React from "react";
-import { GRIPS_IMAGE_URLS, GRIPS_TITLES } from "./constants";
+import { GRIPS_IMAGE_URLS } from "./constants";
 
 const Grip = (props) => {
   const {
@@ -7,7 +7,6 @@ const Grip = (props) => {
   } = props;
   return (
     <div className="gripDiv">
-      <p>{GRIPS_TITLES[grip]}</p>
       <img className="gripImg" src={GRIPS_IMAGE_URLS[grip]} alt="bag grip" />
     </div>
   );

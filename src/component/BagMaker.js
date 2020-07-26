@@ -1,10 +1,10 @@
 import React, { useState } from "react";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { Switch, Route } from "react-router-dom";
 import Grip from "./Grip";
 import GripConfiger from "./GripConfiger";
 import Corpus from "./Corpus";
 import CorpusConfiger from "./CorpusConfiger";
-import NavBar from "./NavBar";
+
 import { DEFAULT_GRIP_CONFIG, DEFAULT_CORPUS_CONFIG } from "./constants";
 
 const BagMaker = () => {
@@ -25,28 +25,23 @@ const BagMaker = () => {
   };
 
   return (
-    <div>
-      <Router>
-        <NavBar />
-        <Switch>
-          <Route path="/" exact>
-            <CorpusConfiger
-              changeCorpusConfig={(value) =>
-                changeCorpusConfig("corpus", value)
-              }
-            />
-          </Route>
-          <Route path="/grip">
-            <GripConfiger
-              changeGripConfig={(value) => changeGripConfig("grip", value)}
-            />
-          </Route>
-        </Switch>
-        <div>
-          <Grip gripConfig={gripConfig} />
-          <Corpus corpusConfig={corpusConfig} />
-        </div>
-      </Router>
+    <div className="bagMaker">
+      <Switch>
+        <Route path="/" exact>
+          <CorpusConfiger
+            changeCorpusConfig={(value) => changeCorpusConfig("corpus", value)}
+          />
+        </Route>
+        <Route path="/grip">
+          <GripConfiger
+            changeGripConfig={(value) => changeGripConfig("grip", value)}
+          />
+        </Route>
+      </Switch>
+      <div className="gripCorpus">
+        <Grip gripConfig={gripConfig} />
+        <Corpus corpusConfig={corpusConfig} />
+      </div>
     </div>
   );
 };

@@ -5,12 +5,12 @@ import grip4Img from "./../assets/images/grips/grip4.png";
 import grip5Img from "./../assets/images/grips/grip5.png";
 import grip6Img from "./../assets/images/grips/grip6.png";
 
-import corpus1Img from "./../assets/images/corpuses/corpus1.jpg";
-import corpus2Img from "./../assets/images/corpuses/corpus2.jpg";
-import corpus3Img from "./../assets/images/corpuses/corpus3.jpg";
-import corpus4Img from "./../assets/images/corpuses/corpus4.jpg";
-import corpus5Img from "./../assets/images/corpuses/corpus5.jpg";
-import corpus6Img from "./../assets/images/corpuses/corpus6.jpg";
+import corpus1Img from "./../assets/images/corpuses/corpus1.png";
+import corpus2Img from "./../assets/images/corpuses/corpus2.png";
+import corpus3Img from "./../assets/images/corpuses/corpus3.png";
+import corpus4Img from "./../assets/images/corpuses/corpus4.png";
+import corpus5Img from "./../assets/images/corpuses/corpus5.png";
+import corpus6Img from "./../assets/images/corpuses/corpus6.png";
 
 export const GRIPS = {
   grip1: "grip1",

@@ -7,11 +7,25 @@ img {
   width: 200px;
   height: 200px;
 }
+p {
+  font-size: 10px;
+  margin-top: 7px;
+}
+
+.header {
+  width: 100%;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: teal;
+}
 
 .gripImg {
   width: 180px;
   height: 140px;
 }
+
 .gripItem img {
   border-radius: 3px;
   width: 40px;
@@ -27,13 +41,14 @@ img {
   flex-wrap: wrap;
   justify-content: center;
   align-content: baseline;
-  border: 0.1px solid black;
-  border-radius: 15px;
+  border: 0.1px solid #f1f8ff;
+  border-radius: 5px;
   transition: 0.5s;
   cursor: pointer;
 }
+
 .gripItem:hover {
-  border: 0.1px solid rgb(23, 123, 180);
+  border: 0.1px solid black;
   color: white;
   background-color: rgb(32, 187, 187);
 }
@@ -41,36 +56,29 @@ img {
 .gripItems {
   width: 185px;
   float: right;
-  margin-right: -199px;
+  margin-right: -198px;
   display: flex;
   flex-wrap: wrap;
-  margin-top: 190px;
+  margin-top: 155px;
 }
 
 .gripDiv {
   position: absolute;
-  margin-left: 200px;
-}
-.corpusDiv {
-  position: absolute;
-  margin-left: 200px;
-  margin-top: 120px;
+  margin-left: 212px;
+  margin-top: 30px;
 }
 
-p {
-  font-size: 10px;
-  margin-top: 7px;
+.corpusDiv {
+  position: absolute;
+  margin-left: 202px;
+  margin-top: 95px;
 }
+
 .navBar {
   width: 200px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  align-content: center;
   float: right;
-  margin-right: 50px;
-  margin-top: 100px;
+  margin-right: 90px;
+  margin-top: 45px;
 }
 
 .gripBar {
@@ -84,11 +92,18 @@ p {
   align-items: center;
   transition: 0.3s;
 }
+
 .gripBar:hover {
   background-color: rgb(32, 187, 187);
   color: black;
 }
+
 .navBar .link {
   text-decoration: none;
   color: rgb(32, 187, 187);
+}
+
+.gripCorpus {
+  height: 350px;
+  background-color: rgb(199, 215, 231);
 }
